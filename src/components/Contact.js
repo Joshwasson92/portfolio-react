@@ -1,24 +1,56 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Form, InputGroup } from "react-bootstrap";
+import "./Contact.css";
 
-function Contact() {
+const ContactModal = ({ handleClose, show, children }) => {
+  const showHideClassName = show ? "modal display-block" : "modal display-none";
+
   return (
-    <form>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-      <Button type="submit">Submit</Button>
-    </form>
+    <div className={showHideClassName}>
+      <section className="modal-main">
+        {children}
+        <div className="contact-form">
+          <Form>
+            <Form.Control
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <Form.Control
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <Form.Control
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+            <Form.Control
+              type="tel"
+              id="phone"
+              required
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              placeholder="000-000-0000"
+            />
+            <InputGroup>
+              <InputGroup.Text>Enter your Message</InputGroup.Text>
+              <Form.Control as="textarea" aria-label="With textarea" />
+            </InputGroup>
+          </Form>
+          <Button variant="success" type="submit">
+            Submit
+          </Button>
+          <Button variant="danger" type="button" onClick={handleClose}>
+            Close
+          </Button>
+        </div>
+      </section>
+    </div>
   );
-}
+};
 
-export default Contact;
+export default ContactModal;

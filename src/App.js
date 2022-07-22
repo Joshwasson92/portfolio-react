@@ -49,6 +49,13 @@ class App extends React.Component {
       <div>
         <div className="App">
           <Navbar bg="dark" variant="dark">
+            <Navbar.Brand>
+              <img
+                className="navLogo"
+                src="/img/jwlogolarge.png"
+                alt="Artistic JW logo"
+              />
+            </Navbar.Brand>
             <Container>
               <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
@@ -79,22 +86,16 @@ class App extends React.Component {
               <p class="find_me_text">Find me on</p>
               <div class="social_media">
                 <a target="_blank" href="https://github.com/Joshwasson92">
-                  <img
-                    src="%PUBLIC_URL%/104452_linkedin_icon.svg"
-                    alt="Github"
-                  />
+                  <img src="/img/github_icon.svg" alt="Github" />
                 </a>
                 <a target="_blank" href="https://twitter.com/joshwasson3">
-                  <img src="./public/104452_linkedin_icon.svg" alt="Twitter" />
+                  <img src="/img/twitter_icon.svg" alt="Twitter" />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/josh-wasson-94aa11222/"
                 >
-                  <img
-                    src="%PUBLIC_URL%/104452_linkedin_icon.svg"
-                    alt="LinkedIn"
-                  />
+                  <img src="/img/linkedin_icon.svg" alt="LinkedIn" />
                 </a>
               </div>
             </main>

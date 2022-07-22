@@ -53,3 +53,11 @@
   list-style: none;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
+
+.navLogo {
+  max-height: 100px;
+}
+
+.find_me_text {
+  font-size: medium;
+}

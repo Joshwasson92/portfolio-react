@@ -1,7 +1,5 @@
 import "./App.css";
 import React from "react";
-import ReactDOM from "react-dom";
-import Modal from "react-modal";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -17,6 +15,9 @@ class App extends React.Component {
     super();
     this.state = {
       showModal: false,
+      projects: false,
+      skills: false,
+      about: true,
     };
 
     this.showModal = this.showModal.bind(this);
@@ -29,6 +30,18 @@ class App extends React.Component {
 
   hideModal = () => {
     this.setState({ show: false });
+  };
+
+  showProjects = () => {
+    this.setState({ projects: true });
+  };
+
+  showSkills = () => {
+    this.setState({ skills: true });
+  };
+
+  showAbout = () => {
+    this.setState({ about: true });
   };
 
   render() {
@@ -56,27 +69,36 @@ class App extends React.Component {
 
           <header className="App-header">
             <main>
-              <About />
               <Contact show={this.state.show} handleClose={this.hideModal} />
+
+              <About />
+
               <Projects />
+
               <Skills />
+              <p class="find_me_text">Find me on</p>
+              <div class="social_media">
+                <a target="_blank" href="https://github.com/Joshwasson92">
+                  <img
+                    src="%PUBLIC_URL%/104452_linkedin_icon.svg"
+                    alt="Github"
+                  />
+                </a>
+                <a target="_blank" href="https://twitter.com/joshwasson3">
+                  <img src="./public/104452_linkedin_icon.svg" alt="Twitter" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/josh-wasson-94aa11222/"
+                >
+                  <img
+                    src="%PUBLIC_URL%/104452_linkedin_icon.svg"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </div>
             </main>
           </header>
-          <p class="find_me_text">Find me on</p>
-          <div class="social_media">
-            <a target="_blank" href="https://github.com/Joshwasson92">
-              {/* <img src={} alt="Github" /> */}
-            </a>
-            <a target="_blank" href="https://twitter.com/joshwasson3">
-              <img src="./public/104452_linkedin_icon.svg" alt="Twitter" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/josh-wasson-94aa11222/"
-            >
-              <img src="%PUBLIC_URL%/104452_linkedin_icon.svg" alt="LinkedIn" />
-            </a>
-          </div>
         </div>
       </div>
     );

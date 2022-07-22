@@ -8,7 +8,7 @@ export const projects = [
       "Within this react project, I was responsible for the frontend and setting up backend serverless components that pulls data from the google calendar API.",
     image:
       "https://user-images.githubusercontent.com/93554057/180350192-2a27028b-7a6a-458b-ba9a-7cbf3c5dcfc7.JPG",
-    link: "https://github.com/Joshwasson92/the-meet-app",
+    link: "https://joshwasson92.github.io/the-meet-app/",
     code: "https://github.com/Joshwasson92/the-meet-app",
   },
   {
@@ -44,9 +44,9 @@ export const projects = [
     technologies: "jQuery",
     description:
       "In this jQuery project I created a To Do app that has standard CRUD functionality.",
-    image: ".https://via.placeholder.com/680",
-    link: "",
-    code: "https://jQuery-to-do-list.joshwasson.repl.co",
+    image: "",
+    link: "https://jQuery-to-do-list.joshwasson.repl.co",
+    code: "https://replit.com/@joshwasson/jQuery-to-do-list",
   },
   {
     title: "Angular MyFlix FrontEnd",

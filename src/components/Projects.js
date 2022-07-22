@@ -19,13 +19,18 @@ export default function Projects() {
           <br />
         </div>
         <div class="col mb-2">
-          <div class="card h-100">
+          <div class="card h-100" className="componentBackground">
+            <br />
             {projects.map((project) => (
-              <Card>
-                <Card.Img variant="top" src={project.image} />
+              <Card className="customCard">
+                <Card.Img
+                  className="card-image"
+                  variant="top"
+                  src={project.image}
+                />
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">
+                  <Card.Subtitle className="customCard">
                     Technologies used: {project.technologies}
                   </Card.Subtitle>
                   <Card.Text>{project.description}</Card.Text>
@@ -35,7 +40,7 @@ export default function Projects() {
                     alt="Link to live demo"
                     target="_blank"
                   >
-                    Live Demo!
+                    Live demo!
                   </Card.Link>
                   <Card.Link
                     className="projects-button"
@@ -48,6 +53,7 @@ export default function Projects() {
                 </Card.Body>
               </Card>
             ))}
+            <br />
           </div>
         </div>
       </div>

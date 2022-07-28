@@ -83,8 +83,8 @@ class App extends React.Component {
               <Projects />
 
               <Skills />
-              <p class="find_me_text">Find me on</p>
-              <div class="social_media">
+              <p className="find_me_text">Find me on</p>
+              <div className="social_media">
                 <a target="_blank" href="https://github.com/Joshwasson92">
                   <img src="/img/github_icon.svg" alt="Github" />
                 </a>

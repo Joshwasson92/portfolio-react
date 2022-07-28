@@ -51,6 +51,7 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  border: none;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 

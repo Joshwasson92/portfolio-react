@@ -12,7 +12,7 @@
   img {
     display: block;
 
-    max-width: 250px;
+    max-width: 190px;
     max-height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@
 @media all and (min-width: 500px) and (max-width: 750px) {
   img {
     display: block;
-    max-width: 350px;
+    max-width: 250px;
     max-height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -36,11 +36,20 @@
   margin-left: 25px;
   margin-right: 25px;
   padding-top: 25px;
+  max-width: 500px;
+  float: none;
+}
+
+.descText {
+  font-size: small;
 }
 .project-item {
   border: 3px;
 }
 
+.card {
+  background-color: gray;
+}
 .card-img-top {
   padding-top: 15px;
   padding-left: 15px;
@@ -49,6 +58,9 @@
 
 .componentBackground {
   background-color: grey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .projects-button {
@@ -58,6 +70,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  max-width: 150px;
+  font-size: medium;
 }
 
 .projects-button:hover {
@@ -66,4 +80,11 @@
 
 .Card.Text {
   color: black;
+}
+
+.descText {
+  font-size: large;
+}
+.projectTech {
+  font-style: italic;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form, InputGroup } from "react-bootstrap";
+import { Button, Form, InputGroup, Spinner } from "react-bootstrap";
 import "./Contact.css";
 
 const ContactModal = ({ handleClose, show, children }) => {
@@ -42,6 +42,14 @@ const ContactModal = ({ handleClose, show, children }) => {
             </InputGroup>
           </Form>
           <Button variant="success" type="submit">
+            {/* <Spinner
+              as="span"
+              animation="border"
+              size="small"
+              role="status"
+              aria-hidden="true"
+            /> */}
+            <span className="visually-hidden">Sending...</span>
             Submit
           </Button>
           <Button variant="danger" type="button" onClick={handleClose}>

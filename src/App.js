@@ -85,15 +85,24 @@ class App extends React.Component {
               <Skills />
               <p className="find_me_text">Find me on</p>
               <div className="social_media">
-                <a target="_blank" href="https://github.com/Joshwasson92">
+                <a
+                  target="_blank"
+                  href="https://github.com/Joshwasson92"
+                  rel="noreferrer"
+                >
                   <img src="/img/github_icon.svg" alt="Github" />
                 </a>
-                <a target="_blank" href="https://twitter.com/joshwasson3">
+                <a
+                  target="_blank"
+                  href="https://twitter.com/joshwasson3"
+                  rel="noreferrer"
+                >
                   <img src="/img/twitter_icon.svg" alt="Twitter" />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/josh-wasson-94aa11222/"
+                  rel="noreferrer"
                 >
                   <img src="/img/linkedin_icon.svg" alt="LinkedIn" />
                 </a>

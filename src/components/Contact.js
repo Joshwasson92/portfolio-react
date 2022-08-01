@@ -9,23 +9,21 @@ export default function ContactModal({ handleClose, show, children }) {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState("");
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (!email || !message || !phone || !firstName || !lastName) {
+    if (!email || !message || !phone || !name) {
       return toast.error("Please fill out all form boxes.");
     }
     try {
       setLoading(true);
       const { data } = await axios.post(`/api/email`, {
         email,
-        firstName,
-        lastName,
+        name,
         phone,
         message,
       });
@@ -53,14 +51,7 @@ export default function ContactModal({ handleClose, show, children }) {
               id="firstName"
               name="firstName"
               placeholder="Your name.."
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-            <Form.Control
-              type="text"
-              id="lastName"
-              name="lastName"
-              placeholder="Your last name.."
-              onChange={(e) => setLastName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
             <Form.Control
               type="text"

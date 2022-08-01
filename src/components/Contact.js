@@ -87,9 +87,8 @@ export default function ContactModal({ handleClose, show, children }) {
             </InputGroup>
           </Form>
 
-          <Button variant="success" type="submit">
-            <span className="visually-hidden">Sending...</span>
-            Submit
+          <Button variant="success" onClick={submitHandler} type="submit">
+            {loading ? "Sending..." : "Submit"}
           </Button>
           <Button variant="danger" type="button" onClick={handleClose}>
             Close

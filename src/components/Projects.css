@@ -48,7 +48,7 @@
 }
 
 .card {
-  background-color: gray;
+  background-color: #282c34;
 }
 .card-img-top {
   padding-top: 15px;
@@ -89,4 +89,22 @@
 }
 .projectTech {
   font-style: italic;
+}
+
+.projectsComponent {
+  background-color: grey;
+}
+
+.finishedProjects {
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 25px;
+  max-width: 500px;
+  float: none;
+  text-align: center;
+}
+.aboutProjects {
+  display: flex;
+  justify-content: center;
 }

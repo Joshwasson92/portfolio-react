@@ -1,3 +1,17 @@
-.Card {
-  background-color: gray;
+.aboutMeCard {
+  background-color: #282c34;
+  font-size: medium;
+  max-width: 85%;
+  text-align: center;
+}
+
+.aboutHeader {
+  font-size: large;
+  text-align: center;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
 }

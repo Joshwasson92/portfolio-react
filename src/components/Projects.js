@@ -5,16 +5,21 @@ import { Card } from "react-bootstrap";
 
 export default function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="projectsComponent">
+      <br />
       <div>
-        <div>
-          <h1>Apps I have Built</h1>
-          <br />
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
-          </p>
+        <div className="aboutProjects">
+          <Card className="finishedProjects">
+            <h1>Apps I have built</h1>
+
+            <br />
+            <div className="projectDesc">
+              <p>
+                Listed below is my most recent projects and technologies used.
+                Several have also live demo!
+              </p>
+            </div>
+          </Card>
           <br />
           <br />
         </div>

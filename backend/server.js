@@ -15,15 +15,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/api/email", (req, res) => {
-  const { email, name, message } = req.body;
+  const { email, name, message, phone } = req.body;
   mailgun()
     .messages()
     .send(
       {
-        from: "John Doe <john@mg.yourdomain.com>",
+        from: "Portfolio Website <josh@Jwasson.dev>",
         to: `${email}`,
         subject: `${name}`,
-        html: `<p>${message} </p>`,
+        html: `<p>${message}  <br><br> Phone # - ${phone}</p>`,
       },
       (error, body) => {
         if (error) {

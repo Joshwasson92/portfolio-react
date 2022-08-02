@@ -29,6 +29,7 @@ export default function ContactModal({ handleClose, show, children }) {
       });
       setLoading(false);
       toast.success(data.message);
+      handleClose();
     } catch (err) {
       setLoading(false);
       toast.error(
@@ -40,52 +41,60 @@ export default function ContactModal({ handleClose, show, children }) {
   };
 
   return (
-    <div className={showHideClassName}>
+    <div>
       <ToastContainer position="top-center" limit={1} />
-      <section className="modal-main">
-        {children}
-        <div className="contact-form">
-          <Form onSubmit={submitHandler}>
-            <Form.Control
-              type="text"
-              id="firstName"
-              name="firstName"
-              placeholder="Your name.."
-              onChange={(e) => setName(e.target.value)}
-            />
-            <Form.Control
-              type="text"
-              id="email"
-              placeholder="Your email.."
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <Form.Control
-              type="tel"
-              id="phone"
-              required
-              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-              placeholder="000-000-0000"
-              onChange={(e) => setPhone(e.target.value)}
-            />
-            <InputGroup>
-              <InputGroup.Text>Enter your Message</InputGroup.Text>
-              <Form.Control
-                id="message"
-                as="textarea"
-                aria-label="With textarea"
-                onChange={(e) => setMessage(e.target.value)}
-              />
-            </InputGroup>
-          </Form>
 
-          <Button variant="success" onClick={submitHandler} type="submit">
-            {loading ? "Sending..." : "Submit"}
-          </Button>
-          <Button variant="danger" type="button" onClick={handleClose}>
-            Close
-          </Button>
-        </div>
-      </section>
+      <div className={showHideClassName}>
+        <section className="modal-main">
+          {children}
+          <div className="contact-form">
+            <Form>
+              <Form.Control
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Your name.."
+                onChange={(e) => setName(e.target.value)}
+              />
+              <Form.Control
+                type="text"
+                id="email"
+                placeholder="Your email.."
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <Form.Control
+                type="tel"
+                id="phone"
+                required
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                placeholder="000-000-0000"
+                onChange={(e) => setPhone(e.target.value)}
+              />
+              <InputGroup>
+                <InputGroup.Text>Enter your Message</InputGroup.Text>
+                <Form.Control
+                  id="message"
+                  as="textarea"
+                  aria-label="With textarea"
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </InputGroup>
+            </Form>
+
+            <Button
+              disabled={loading}
+              variant="success"
+              onClick={submitHandler}
+              type="submit"
+            >
+              {loading ? "Sending..." : "Submit"}
+            </Button>
+            <Button variant="danger" type="button" onClick={handleClose}>
+              Close
+            </Button>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

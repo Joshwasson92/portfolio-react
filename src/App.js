@@ -48,7 +48,7 @@ class App extends React.Component {
     return (
       <div>
         <div className="App">
-          <Navbar bg="dark" variant="dark">
+          <Navbar bg="dark" variant="dark" sticky="top">
             <Navbar.Brand>
               <img
                 className="navLogo"
@@ -83,8 +83,9 @@ class App extends React.Component {
               <Projects />
 
               <Skills />
-              <p className="find_me_text">Find me on</p>
+
               <div className="social_media">
+                <p className="find_me_text">Find me on</p>
                 <a
                   target="_blank"
                   href="https://github.com/Joshwasson92"

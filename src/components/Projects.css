@@ -76,6 +76,8 @@
 
 .projects-button:hover {
   color: rgb(0, 0, 0);
+  position: relative;
+  top: -5px;
 }
 
 .Card.Text {

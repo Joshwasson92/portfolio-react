@@ -1,21 +1,19 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 
 function About() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div id="about">
+      <Card>
+        <h1>About Me!</h1>
         <p>
-          Edit <code>src/About.js</code> and save to reload.
+          My name is Josh Wasson, I have been a developer for less than a year.
+          My interest in web development started in early 2020 and I finally
+          took a head first plunge into web development by taking part in a
+          bootcamp, Prior to development I have worked in various production
+          environments in the banking industry.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </Card>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <div className="App">
+    <div id="skills">
       <header className="App-header">
         <p>
           Edit <code>src/Skills.js</code> and save to reload.

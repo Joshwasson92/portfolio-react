@@ -123,3 +123,7 @@
   display: flex;
   justify-content: center;
 }
+
+.projectDesc {
+  font-size: medium;
+}

@@ -15,10 +15,8 @@ export default function Projects() {
 
             <br />
             <div className="projectDesc">
-              <p>
-                Listed below is my most recent projects and technologies used.
-                Several have also live demo!
-              </p>
+              Listed below is my most recent projects and technologies used.
+              Several have also live demo!
             </div>
           </Card>
           <br />

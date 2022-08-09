@@ -57,13 +57,7 @@
 .descText {
   font-size: small;
 }
-.project-item {
-  border: 3px;
-}
 
-.card {
-  background-color: #282c34;
-}
 .card-img-top {
   padding-top: 15px;
   padding-left: 15px;
@@ -117,6 +111,7 @@
   max-width: 500px;
   float: none;
   text-align: center;
+  background-color: #282c34;
 }
 
 .aboutProjects {

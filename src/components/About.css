@@ -1,17 +1,19 @@
 .aboutMeCard {
   background-color: #282c34;
   font-size: medium;
-  max-width: 85%;
+  max-width: 600px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutHeader {
   font-size: large;
   text-align: center;
+  margin-top: 5%;
 }
 
-.aboutMe {
-  display: flex;
-  justify-content: center;
-  background-color: grey;
+.portrait {
+  max-width: 35%;
 }

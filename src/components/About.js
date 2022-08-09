@@ -9,13 +9,16 @@ function About() {
 
       <Card className="aboutMeCard">
         <h1 className="aboutHeader">About me!</h1>
-        <p>
+        <br />{" "}
+        <Card.Img className="portrait" src="/img/portrait.png"></Card.Img>
+        <br />
+        <Card.Body>
           My name is Josh Wasson, I have been a developer for less than a year.
           My interest in web development started in early 2020 and I finally
           took a head first plunge into web development by taking part in a
           bootcamp, Prior to development I have worked in various production
           environments in the banking and risk management industry.
-        </p>
+        </Card.Body>
       </Card>
     </div>
   );

@@ -6,9 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import About from "./components/About.js";
 import Contact from "./components/Contact.js";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import { Button } from "react-bootstrap";
-// import githubImage from "./github_icon.svg";
 
 class App extends React.Component {
   constructor() {
@@ -46,8 +44,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="App">
+      <div class="flex-container">
+        <div class="flex-item">
           <Navbar bg="dark" variant="dark" sticky="top">
             <Navbar.Brand>
               <img
@@ -58,58 +56,62 @@ class App extends React.Component {
             </Navbar.Brand>
             <Container>
               <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link className="navLink" href="#about">
+                  About
+                </Nav.Link>
                 <Button
-                  className="navButton"
+                  className="navLink"
                   bg="dark"
                   variant="dark"
                   onClick={this.showModal}
                 >
                   Contact
                 </Button>
-                <Nav.Link href="#projects">Projects</Nav.Link>
-                <Nav.Link href="#skills">Skills</Nav.Link>
-              </Nav>
-            </Container>
-          </Navbar>
-
-          <header className="App-header">
-            <main>
-              <Contact show={this.state.show} handleClose={this.hideModal} />
-
-              <About />
-
-              <Projects />
-
-              <Skills />
-
-              <div className="social_media">
-                <p className="find_me_text">Find me on</p>
-                <a
-                  target="_blank"
-                  href="https://github.com/Joshwasson92"
-                  rel="noreferrer"
-                >
-                  <img src="/img/github_icon.svg" alt="Github" />
-                </a>
-                <a
-                  target="_blank"
+                <Nav.Link className="navLink" href="#projects">
+                  Projects
+                </Nav.Link>
+                <Nav.Link
+                  className="navButton"
                   href="https://twitter.com/joshwasson3"
+                  target="_blank"
                   rel="noreferrer"
                 >
                   <img src="/img/twitter_icon.svg" alt="Twitter" />
-                </a>
-                <a
+                </Nav.Link>
+
+                <Nav.Link
+                  className="navButton"
+                  href="https://github.com/Joshwasson92"
+                  target="_blank"
+                  src="/img/github_icon.svg"
+                  alt="Github"
+                  rel="noreferrer"
+                >
+                  <img src="/img/github_icon.svg" alt="Github" />
+                </Nav.Link>
+
+                <Nav.Link
+                  className="navButton"
                   target="_blank"
                   href="https://www.linkedin.com/in/josh-wasson-94aa11222/"
                   rel="noreferrer"
                 >
                   <img src="/img/linkedin_icon.svg" alt="LinkedIn" />
-                </a>
+                </Nav.Link>
+              </Nav>
+            </Container>
+          </Navbar>
+
+          <div className="content">
+            <main>
+              <Contact show={this.state.show} handleClose={this.hideModal} />
+
+              <div className="targetAbout">
+                <About />
               </div>
+              <Projects />
             </main>
-          </header>
+          </div>
         </div>
       </div>
     );

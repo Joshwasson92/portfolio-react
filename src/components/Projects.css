@@ -3,8 +3,8 @@
     display: block;
     max-height: 880px;
     max-width: 880px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 
@@ -29,6 +29,11 @@
   }
 }
 
+.demo[href^="none"],
+[href^="none"] {
+  transform: scale(0);
+}
+
 .card.customCard {
   color: whitesmoke !important;
   background-color: #282c34;
@@ -38,6 +43,15 @@
   padding-top: 25px;
   max-width: 500px;
   float: none;
+  text-align: center;
+}
+.card-image {
+  display: block;
+  max-height: 500px;
+  max-width: 250px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .descText {
@@ -57,7 +71,6 @@
 }
 
 .componentBackground {
-  background-color: grey;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -93,6 +106,7 @@
 
 .projectsComponent {
   background-color: grey;
+  width: 100%;
 }
 
 .finishedProjects {
@@ -104,6 +118,7 @@
   float: none;
   text-align: center;
 }
+
 .aboutProjects {
   display: flex;
   justify-content: center;

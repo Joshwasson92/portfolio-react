@@ -1,4 +1,5 @@
 import React from "react";
+
 import { projects } from "../data";
 import "./Projects.css";
 import { Card } from "react-bootstrap";
@@ -10,7 +11,7 @@ export default function Projects() {
       <div>
         <div className="aboutProjects">
           <Card className="finishedProjects">
-            <h1>Apps I have built</h1>
+            <h1>My work!</h1>
 
             <br />
             <div className="projectDesc">
@@ -31,7 +32,7 @@ export default function Projects() {
               <div class="card-deck">
                 <br />
                 {projects.map((project) => (
-                  <Card class="" className="customCard">
+                  <Card className="customCard">
                     <Card.Img
                       className="card-image"
                       variant="top"
@@ -49,7 +50,7 @@ export default function Projects() {
                         {project.description}
                       </Card.Text>
                       <Card.Link
-                        className="projects-button"
+                        className="projects-button demo"
                         href={project.link}
                         alt="Link to live demo"
                         target="_blank"
@@ -59,7 +60,7 @@ export default function Projects() {
                       <Card.Link
                         className="projects-button"
                         href={project.code}
-                        alt="Link to live demo"
+                        alt="Link to github"
                         target="_blank"
                       >
                         See the code!

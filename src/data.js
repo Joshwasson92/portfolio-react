@@ -6,8 +6,7 @@ export const projects = [
     technologies: "React, AWS, Serverless, Google Calendar API",
     description:
       "Within this react project, I was responsible for the frontend and setting up backend serverless components that pulls data from the google calendar API.",
-    image:
-      "https://user-images.githubusercontent.com/93554057/180350192-2a27028b-7a6a-458b-ba9a-7cbf3c5dcfc7.JPG",
+    image: "img/meet.gif",
     link: "https://joshwasson92.github.io/the-meet-app/",
     code: "https://github.com/Joshwasson92/the-meet-app",
   },
@@ -16,8 +15,7 @@ export const projects = [
     technologies: "Javascript and external API",
     description:
       "For this Javascript project I was responsible for the front end and connecting it to the backend pokemon API.",
-    image:
-      "https://user-images.githubusercontent.com/93554057/180355188-99f47de7-d98e-4285-9415-5fbbb01b2c7a.JPG",
+    image: "img/pokedex.gif",
     link: "https://joshwasson92.github.io/Pokedex/",
     code: "https://github.com/Joshwasson92/Pokedex",
   },
@@ -27,7 +25,7 @@ export const projects = [
     description:
       "In this Node project, I was responsible for building the backend endpoints and database.",
     image: "https://via.placeholder.com/680",
-    link: "",
+    link: "none",
     code: "https://github.com/Joshwasson92/myFlixDB",
   },
   {
@@ -36,7 +34,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "https://via.placeholder.com/680",
-    link: "",
+    link: "none",
     code: "https://github.com/Joshwasson92/MyFlixClientSide",
   },
   {
@@ -44,7 +42,7 @@ export const projects = [
     technologies: "jQuery",
     description:
       "In this jQuery project I created a To Do app that has standard CRUD functionality.",
-    image: "",
+    image: "img/todo.gif",
     link: "https://jQuery-to-do-list.joshwasson.repl.co",
     code: "https://replit.com/@joshwasson/jQuery-to-do-list",
   },
@@ -54,7 +52,16 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "https://via.placeholder.com/680",
-    link: "",
+    link: "none",
     code: "",
+  },
+  {
+    title: "Chatter",
+    technologies: "React Native, Javascript, Expo, GiftedChat",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "img/chatter.gif",
+    link: "none",
+    code: "https://github.com/Joshwasson92/chatter",
   },
 ];

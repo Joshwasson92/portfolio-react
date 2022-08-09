@@ -45,7 +45,7 @@ export default function ContactModal({ handleClose, show, children }) {
       <ToastContainer position="top-center" limit={1} />
 
       <div className={showHideClassName}>
-        <section className="modal-main">
+        <section data-aos="fade-up" className="modal-main">
           {children}
           <div className="contact-form">
             <Form>

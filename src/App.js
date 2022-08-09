@@ -7,6 +7,8 @@ import About from "./components/About.js";
 import Contact from "./components/Contact.js";
 import Projects from "./components/Projects";
 import { Button } from "react-bootstrap";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 class App extends React.Component {
   constructor() {
@@ -16,6 +18,9 @@ class App extends React.Component {
       projects: false,
       skills: false,
       about: true,
+    };
+    this.componentDidMount = () => {
+      Aos.init();
     };
 
     this.showModal = this.showModal.bind(this);
@@ -44,11 +49,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class="flex-container">
-        <div class="flex-item">
+      <div className="flex-container">
+        <div className="flex-item">
           <Navbar bg="dark" variant="dark" sticky="top">
             <Navbar.Brand>
               <img
+                data-aos="fade-left"
                 className="navLogo"
                 src="/img/jwlogolarge.png"
                 alt="Artistic JW logo"
@@ -71,6 +77,7 @@ class App extends React.Component {
                   Projects
                 </Nav.Link>
                 <Nav.Link
+                  data-aos="fade-left"
                   className="navButton"
                   href="https://twitter.com/joshwasson3"
                   target="_blank"
@@ -80,6 +87,7 @@ class App extends React.Component {
                 </Nav.Link>
 
                 <Nav.Link
+                  data-aos="fade-left"
                   className="navButton"
                   href="https://github.com/Joshwasson92"
                   target="_blank"
@@ -91,6 +99,7 @@ class App extends React.Component {
                 </Nav.Link>
 
                 <Nav.Link
+                  data-aos="fade-left"
                   className="navButton"
                   target="_blank"
                   href="https://www.linkedin.com/in/josh-wasson-94aa11222/"

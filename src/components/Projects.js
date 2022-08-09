@@ -1,16 +1,21 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { projects } from "../data";
 import "./Projects.css";
 import { Card } from "react-bootstrap";
 
 export default function Projects() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section id="projects" className="projectsComponent">
       <br />
       <div>
         <div className="aboutProjects">
-          <Card className="finishedProjects">
+          <Card data-aos="fade-up" className="finishedProjects">
             <h1>My work!</h1>
 
             <br />
@@ -27,7 +32,7 @@ export default function Projects() {
             <br />
             <div class="col-sm-6" className="componentBackground">
               <br />
-              <div class="card-deck">
+              <div data-aos="fade-up" class="card-deck">
                 <br />
                 {projects.map((project) => (
                   <Card className="customCard">

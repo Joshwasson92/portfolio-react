@@ -5,8 +5,8 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  border-color: gold;
   align-items: center;
-  border: none;
 }
 
 .aboutHeader {

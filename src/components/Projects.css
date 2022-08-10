@@ -34,6 +34,10 @@
   transform: scale(0);
 }
 
+.hovered {
+  visibility: hidden !important;
+}
+
 .card.customCard {
   color: whitesmoke !important;
   background-color: #282c34;

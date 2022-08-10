@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { projects } from "../data";
@@ -6,8 +6,10 @@ import "./Projects.css";
 import { Card } from "react-bootstrap";
 
 export default function Projects() {
+  const [hovering, setHovering] = useState({});
+
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ once: true, duration: 2000 });
   }, []);
 
   return (
@@ -36,11 +38,24 @@ export default function Projects() {
                 <br />
                 {projects.map((project) => (
                   <Card className="customCard">
-                    <Card.Img
-                      className="card-image"
-                      variant="top"
-                      src={project.image}
-                    />
+                    <div
+                      onMouseEnter={() =>
+                        setHovering({ ...hovering, [project.title]: true })
+                      }
+                      onMouseLeave={() =>
+                        setHovering({ ...hovering, [project.title]: false })
+                      }
+                    >
+                      <Card.Img
+                        className="card-image"
+                        variant="top"
+                        src={
+                          hovering[project.title]
+                            ? project.image
+                            : project.stillImg
+                        }
+                      />
+                    </div>
                     <Card.Body>
                       <Card.Title>{project.title}</Card.Title>
                       <Card.Subtitle className="customCard">

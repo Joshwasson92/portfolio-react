@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light&display=swap");
 
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .navLogo {
+    max-width: 50px;
+  }
+  .nav-items {
+    font-size: small;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -7,7 +16,7 @@
 
 .targetAbout {
   margin-top: 8%;
-  margin-bottom: 15%;
+  margin-bottom: 125px;
 }
 .content {
   background-color: #282c34;

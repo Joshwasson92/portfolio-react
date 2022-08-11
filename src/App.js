@@ -54,16 +54,17 @@ class App extends React.Component {
     return (
       <div className="flex-container">
         <div className="flex-item">
-          <Navbar bg="dark" variant="dark" sticky="top">
-            <Navbar.Brand>
-              <img
-                data-aos="fade-left"
-                className="navLogo"
-                src="/img/jwlogolarge.png"
-                alt="Artistic JW logo"
-              />
-            </Navbar.Brand>
-            <Container>
+          <Container>
+            <Navbar bg="dark" variant="dark" sticky="top">
+              <Navbar.Brand>
+                <img
+                  data-aos="fade-left"
+                  className="navLogo"
+                  src="/img/jwlogolarge.png"
+                  alt="Artistic JW logo"
+                />
+              </Navbar.Brand>
+
               <Nav className="me-auto nav-items">
                 <Nav.Link className="navLink" href="#about">
                   About
@@ -111,9 +112,8 @@ class App extends React.Component {
                   <img src="/img/linkedin_icon.svg" alt="LinkedIn" />
                 </Nav.Link>
               </Nav>
-            </Container>
-          </Navbar>
-
+            </Navbar>
+          </Container>
           <main>
             <div className="content">
               <div data-aos="flip-right" className="hello">

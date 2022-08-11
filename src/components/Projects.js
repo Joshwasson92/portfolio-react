@@ -38,8 +38,7 @@ export default function Projects() {
           <div class="row">
             <br />
             <div class="col-sm-6" className="componentBackground">
-              <br />
-              <div class="card-deck">
+              <div className="projects-content" Style={"margin-left: 8%"}>
                 <br />
                 {projects.map((project) => (
                   <Card data-aos="fade-up" className="customCard">
@@ -64,7 +63,7 @@ export default function Projects() {
                     <Card.Body>
                       <Card.Title>{project.title}</Card.Title>
                       <Card.Subtitle className="customCard">
-                        Technologies used:{" "}
+                        Technologies used:
                         <div className="projectTech">
                           {project.technologies}
                         </div>

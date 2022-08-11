@@ -4,7 +4,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div id="about-content">
+    <div id="about-content" Style={"margin-left: 30%"}>
       <br />
 
       <Card className="aboutMeCard">

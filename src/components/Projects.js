@@ -8,8 +8,22 @@ import { Card } from "react-bootstrap";
 export default function Projects() {
   const [hovering, setHovering] = useState({});
 
+  // function everyOther(projects) {
+  //   var projectsArray = projects;
+  //   var tempArray = [];
+  //   for (let i = 0; i < projects.length; i += 2) {
+  //     Card.classList.add("anchor");
+  //     tempArray.push(projectsArray[i]);
+  //   }
+  // }
+
   useEffect(() => {
-    Aos.init({ once: true, duration: 2000 });
+    Aos.init({
+      once: true,
+      duration: 2000,
+      easing: "ease-in-out-back",
+      anchorPlacement: "top-bottom",
+    });
   }, []);
 
   return (
@@ -17,15 +31,6 @@ export default function Projects() {
       <br />
       <div>
         <div className="aboutProjects">
-          <Card data-aos="fade-up" className="finishedProjects">
-            <h1>My work!</h1>
-
-            <br />
-            <div className="projectDesc">
-              Listed below is my most recent projects and technologies used.
-              Several have also live demo!
-            </div>
-          </Card>
           <br />
           <br />
         </div>
@@ -34,10 +39,10 @@ export default function Projects() {
             <br />
             <div class="col-sm-6" className="componentBackground">
               <br />
-              <div data-aos="fade-up" class="card-deck">
+              <div class="card-deck">
                 <br />
                 {projects.map((project) => (
-                  <Card className="customCard">
+                  <Card data-aos="fade-up" className="customCard">
                     <div
                       onMouseEnter={() =>
                         setHovering({ ...hovering, [project.title]: true })

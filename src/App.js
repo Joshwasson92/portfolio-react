@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import { Button } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import WebFont from "webfontloader";
 
 class App extends React.Component {
   constructor() {
@@ -20,7 +21,9 @@ class App extends React.Component {
       about: true,
     };
     this.componentDidMount = () => {
-      Aos.init();
+      Aos.init({
+        duration: 2200,
+      });
     };
 
     this.showModal = this.showModal.bind(this);
@@ -61,7 +64,7 @@ class App extends React.Component {
               />
             </Navbar.Brand>
             <Container>
-              <Nav className="me-auto">
+              <Nav className="me-auto nav-items">
                 <Nav.Link className="navLink" href="#about">
                   About
                 </Nav.Link>
@@ -111,16 +114,19 @@ class App extends React.Component {
             </Container>
           </Navbar>
 
-          <div className="content">
-            <main>
+          <main>
+            <div className="content">
+              <div data-aos="flip-right" className="hello">
+                Hello, I'm <span className="name">Josh Wasson</span>. I'm a
+                full- stack web developer.
+              </div>
               <Contact show={this.state.show} handleClose={this.hideModal} />
-
               <div className="targetAbout">
                 <About />
               </div>
-              <Projects />
-            </main>
-          </div>
+              <Projects data-aos="fade-up" />
+            </div>
+          </main>
         </div>
       </div>
     );

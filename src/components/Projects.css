@@ -34,10 +34,6 @@
   transform: scale(0);
 }
 
-.hovered {
-  visibility: hidden !important;
-}
-
 .card.customCard {
   color: whitesmoke !important;
   background-color: #282c34;
@@ -45,9 +41,11 @@
   margin-left: 25px;
   margin-right: 25px;
   padding-top: 25px;
-  max-width: 500px;
+  max-width: 85%;
   float: none;
   text-align: center;
+  border: 3px;
+  border-color: gold;
 }
 .card-image {
   display: block;
@@ -104,7 +102,9 @@
 
 .projectsComponent {
   background-color: grey;
-  width: 100%;
+  width: 85%;
+  display: flex;
+  justify-content: center;
 }
 
 .finishedProjects {
@@ -125,4 +125,10 @@
 
 .projectDesc {
   font-size: medium;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }

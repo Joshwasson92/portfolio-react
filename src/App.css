@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light&display=swap");
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,7 +28,8 @@
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
-
+  font-family: "Lobster", cursive;
+  font-size: 35px;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -104,4 +107,21 @@
 
 .Navbar {
   padding-bottom: 1em;
+}
+
+.hello {
+  background-color: grey;
+  color: #282c34;
+  margin-top: 8%;
+  height: 125px;
+  width: 455px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 35px;
+  border-radius: 25px;
+}
+
+.name {
+  color: blue;
 }

@@ -23,7 +23,7 @@ export const projects = [
   },
   {
     title: "MyFlix Database",
-    technologies: "Node, Express, Passport",
+    technologies: "Node, Express, Passport, Axios, Mongoose",
     description:
       "In this Node project, I was responsible for building the backend endpoints and database.",
     image: "https://via.placeholder.com/680",
@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     title: "MyFlix Movie App",
-    technologies: "React, React Bootstrap, Node, ",
+    technologies: "React, React Bootstrap, Node ",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     stillImg: "https://via.placeholder.com/680",
@@ -59,14 +59,14 @@ export const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     stillImg: "https://via.placeholder.com/680",
     image: "https://via.placeholder.com/680",
-    link: "https://github.com/Joshwasson92/myFlix-Angular-client",
-    code: "",
+    link: "none",
+    code: "https://github.com/Joshwasson92/myFlix-Angular-client",
   },
   {
     title: "Chatter",
     technologies: "React Native, Javascript, Expo, GiftedChat",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "In this React Native Project, users are able to join a chat room and have conversations with eachother and also send images, take images and share location data.",
     stillImg: "img/chatterimg.png",
     image: "img/chatter.gif",
     link: "none",

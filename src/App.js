@@ -9,7 +9,6 @@ import Projects from "./components/Projects";
 import { Button } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import WebFont from "webfontloader";
 
 class App extends React.Component {
   constructor() {

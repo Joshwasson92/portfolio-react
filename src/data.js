@@ -1,5 +1,3 @@
-export const skills = [];
-
 export const projects = [
   {
     title: "Meet-App",
@@ -8,7 +6,7 @@ export const projects = [
       "Within this react project, I was responsible for the frontend and setting up backend serverless components that pulls data from the google calendar API.",
     image: "img/meet.gif",
     stillImg: "img/meetimg.png",
-    link: "https://joshwasson92.github.io/the-meet-app/",
+    link: "none",
     code: "https://github.com/Joshwasson92/the-meet-app",
   },
   {

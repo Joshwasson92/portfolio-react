@@ -12,8 +12,8 @@ function About() {
         <Card.Title className="big-about">About</Card.Title>
         <Card.Body>
           I have been a developer for less than a year. My interest in web
-          development started in early 2020 and I finally took a head first
-          plunge into web development by taking part in a bootcamp, Prior to
+          development started in early 2020 and I decided to plunge head first
+          into web development by taking part in a bootcamp, Prior to
           development I have worked in various production environments in the
           banking and risk management industry.
         </Card.Body>

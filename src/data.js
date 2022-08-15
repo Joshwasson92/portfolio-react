@@ -3,7 +3,7 @@ export const projects = [
     title: "Meet-App",
     technologies: "React, AWS, Serverless, Google Calendar API",
     description:
-      "Within this react project, I was responsible for the frontend and setting up backend serverless components that pulls data from the google calendar API.",
+      "For this react project, I was responsible for the frontend and setting up backend serverless components that pulls data from the Google calendar API. The Meet-App gives users the ability to see events in each city and country along with data visualization to aid in seeing what type of events are available for each area.Within this react project, I was responsible for the frontend and setting up backend serverless components that pulls data from the google calendar API. The App gives users the ability to see events in each city and country along with data visualization to aid in seeing what type of events are available for each area.",
     image: "img/meet.gif",
     stillImg: "img/meetimg.png",
     link: "none",
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: "Pokedex",
-    technologies: "Javascript and external API",
+    technologies: "Javascript",
     description:
       "For this Javascript project I was responsible for the front end and connecting it to the backend pokemon API.",
     image: "img/pokedex.gif",
@@ -24,19 +24,19 @@ export const projects = [
     technologies: "Node, Express, Passport, Axios, Mongoose",
     description:
       "In this Node project, I was responsible for building the backend endpoints and database.",
-    image: "https://via.placeholder.com/680",
-    stillImg: "https://via.placeholder.com/680",
+    image: "img/node.jpg",
+    stillImg: "img/node.jpg",
 
     link: "none",
     code: "https://github.com/Joshwasson92/myFlixDB",
   },
   {
     title: "MyFlix Movie App",
-    technologies: "React, React Bootstrap, Node ",
+    technologies: "React, React Bootstrap ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    stillImg: "https://via.placeholder.com/680",
-    image: "https://via.placeholder.com/680",
+      "In this React Project I was responsible for building the front end and connecting it to the MyFlix Database project. The project allows users to view movie information about movies including a description, genre descriptions and director information as well. It also gives users the ability to add or remove movies from a favorites list along with being able to update their profile information.",
+    stillImg: "img/myFlixStill.png",
+    image: "img/myFlix.gif",
     link: "none",
     code: "https://github.com/Joshwasson92/MyFlixClientSide",
   },
@@ -51,10 +51,10 @@ export const projects = [
     code: "https://replit.com/@joshwasson/jQuery-to-do-list",
   },
   {
-    title: "Angular MyFlix FrontEnd",
-    technologies: "Angular, Javascript",
+    title: " MyFlix Angular App",
+    technologies: "Angular, Typescript, Angular Material",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "In this Angular project I was responsible for building the front end and connecting it to the MyFlix DB project. It utilizes Angular Material to provide a basic but aesthetically pleasing UI. Users have the ability to search for movies along with adding or removing them for their favorite list and also allows users to edit any of their profile information as well.",
     stillImg: "https://via.placeholder.com/680",
     image: "https://via.placeholder.com/680",
     link: "none",
@@ -62,7 +62,7 @@ export const projects = [
   },
   {
     title: "Chatter",
-    technologies: "React Native, Javascript, Expo, GiftedChat",
+    technologies: "React Native, Expo, GiftedChat",
     description:
       "In this React Native Project, users are able to join a chat room and have conversations with eachother and also send images, take images and share location data.",
     stillImg: "img/chatterimg.png",

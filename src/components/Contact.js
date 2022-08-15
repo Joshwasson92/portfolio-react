@@ -21,12 +21,15 @@ export default function ContactModal({ handleClose, show, children }) {
     }
     try {
       setLoading(true);
-      const { data } = await axios.post(`/api/email`, {
-        email,
-        name,
-        phone,
-        message,
-      });
+      const { data } = await axios.post(
+        `https://sleepy-coast-02479.herokuapp.com/api/email`,
+        {
+          email,
+          name,
+          phone,
+          message,
+        }
+      );
       setLoading(false);
       toast.success(data.message);
       handleClose();

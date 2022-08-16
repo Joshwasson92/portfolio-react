@@ -4,8 +4,75 @@
   .navLogo {
     max-width: 50px;
   }
+  .navlink {
+    font-size: small !important;
+  }
+  .navLogo {
+    max-width: 70px;
+  }
+  .navButton {
+    max-width: 20px;
+    margin-left: 10px;
+  }
+  .hello {
+    font-size: medium;
+    padding-top: 20px;
+    height: 250px;
+    width: 75%;
+    text-align: justify;
+  }
+  .name {
+    font-size: medium;
+    text-align: justify;
+    width: 75%;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .navLogo {
+    max-width: 50px;
+  }
+  .navlink {
+    font-size: medium !important;
+  }
+  .navLogo {
+    max-width: 70px;
+  }
+  .nav-button {
+    max-width: 20px;
+  }
+  .hello {
+    font-size: medium;
+    padding-top: 10px;
+    height: 150px;
+    width: 75%;
+    text-align: justify;
+  }
+  .name {
+    font-size: medium;
+    text-align: justify;
+    width: 75%;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 500px) {
+  .navLogo {
+    max-width: 30px;
+  }
   .nav-items {
-    font-size: small;
+    font-size: x-small;
+  }
+  .navLink {
+    font-size: small !important;
+  }
+  .Button {
+    font-size: small !important;
+  }
+  .nav-button {
+    max-width: 10px;
+  }
+  .navLogo {
+    max-width: 0px;
   }
 }
 

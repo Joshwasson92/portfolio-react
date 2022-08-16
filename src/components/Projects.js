@@ -8,15 +8,6 @@ import { Card } from "react-bootstrap";
 export default function Projects() {
   const [hovering, setHovering] = useState({});
 
-  // function everyOther(projects) {
-  //   var projectsArray = projects;
-  //   var tempArray = [];
-  //   for (let i = 0; i < projects.length; i += 2) {
-  //     Card.classList.add("anchor");
-  //     tempArray.push(projectsArray[i]);
-  //   }
-  // }
-
   useEffect(() => {
     Aos.init({
       once: true,

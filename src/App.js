@@ -19,6 +19,7 @@ class App extends React.Component {
       skills: false,
       about: true,
     };
+
     this.componentDidMount = () => {
       Aos.init({
         duration: 2200,

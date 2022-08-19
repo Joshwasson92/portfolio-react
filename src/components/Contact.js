@@ -4,7 +4,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "./Contact.css";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import { Fade } from "react-bootstrap";
 
 export default function ContactModal({ handleClose, show, children }) {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -33,6 +32,7 @@ export default function ContactModal({ handleClose, show, children }) {
       );
       setLoading(false);
       toast.success(data.message);
+      handleClose();
     } catch (err) {
       setLoading(false);
       toast.error(

@@ -10,7 +10,7 @@ function About() {
       <Card className="aboutMeCard">
         <br />
         <Card.Title className="big-about">About</Card.Title>
-        <Card.Body>
+        <Card.Body className="aboutContent">
           I have been a developer for less than a year. My interest in web
           development started in early 2020 and I decided to plunge head first
           into web development by taking part in a bootcamp, Prior to

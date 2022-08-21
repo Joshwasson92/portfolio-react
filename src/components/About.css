@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .aboutContent {
+    font-size: medium;
+  }
+}
+
 .aboutMeCard {
   background-color: #282c34;
   font-size: large;
-  max-width: 65%;
+  max-width: 85%;
   text-align: center;
-
+  margin-right: 30%;
   border-color: gold;
   align-items: center;
 }
